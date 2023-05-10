@@ -1,7 +1,7 @@
 const openMenu = document.querySelector(".open-menu");
 const closeMenu = document.querySelector(".close-menu");
 const menuBurger = document.querySelector(".menu-burger");
-const imgCoffee = document.querySelector("#coffee")
+const imgCoffee = document.querySelector("#coffee");
 
 function burger() {
   openMenu.classList.toggle('hide');
