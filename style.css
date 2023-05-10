@@ -13,6 +13,8 @@ body {
   font-family: 'Manrope', sans-serif;
   color: white;
   background: #000000;
+
+  overflow: hidden;
 }
 
 .hide {
@@ -26,6 +28,47 @@ header {
   margin-top: 3rem;
   align-items: center;
   justify-content: space-between;
+}
+
+.open-menu, .close-menu {
+  cursor: pointer;
+}
+
+.menu-burger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.menu-burger ul {
+  list-style: none;
+  margin-top: 2.6rem;
+  border-top: 1px solid #29292E;
+}
+
+.menu-burger ul li {
+  padding: 1.8rem 0 1.4rem 3.1rem;
+  border-bottom: 1px solid #29292E;
+}
+
+.menu-burger ul li:hover {
+  border-left: 5px solid #8257E6;
+  font-weight: 700;
+  color: #E1E1E6;
+}
+
+.menu-burger ul li a {
+  text-decoration: none;
+  color: #A8A8B3;
+}
+
+.menu-burger ul li a:hover {
+  color: #E1E1E6;
 }
 
 main {
@@ -88,7 +131,6 @@ footer {
   position: absolute;
   bottom: -30px;
   text-align: center;
-  z-index: -1;
 }
 
 footer #coffee {
@@ -134,7 +176,7 @@ footer  #blur{
 }
 
 @media (min-width: 950px) {
-  #logo-mobile, .menu-icons, main button, main p, #blur {
+  #logo-mobile, .menu-icons, .menu-burger, main button, main p, #blur {
     display: none;
   }
 
