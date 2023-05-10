@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Manrope', sans-serif;
+  color: white;
+  background: #000000;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  padding: 0 2rem;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4.1rem;
+  text-align: center;
+
+  padding: 0 9rem;
+  margin-top: 8.8rem;
+}
+
+main button {
+  border: 1px solid #8257E5;
+  border-radius: 6px;
+  background: none;
+
+  color:white;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+  gap: 1rem;
+
+  margin: 8.8rem auto 0;
+}
+
+main button:hover {
+  background: #8257E5;
+}
+
+section {
+  text-align: center;
+  margin-top: 9.8rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 6.8rem;
+  letter-spacing: -0.03em;
+
+  padding: 0 4rem;
+}
+
+section #filled-letter {
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section #outline-letter {
+  color: black;
+  text-shadow: -1px -1px 0 #8257E5, 1px -1px 0 #8257E5, -1px 1px 0 #8257E5, 1px 1px 0 #8257E5;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  text-align: center;
+  z-index: -1;
+}
+
+footer #coffee {
+  width: clamp(90%, 100%, 100vw);
+}
+
+footer  #blur{
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+
+@media (max-width: 490px) {
+  main {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  main button {
+    margin-top: 3rem;
+  }
+
+  section {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+  /* section {
+    display: none;
+  } */
+}
+
+@media (max-width: 950px) {
+  .menu-wrapper, #logo-desktop, header button {
+    display: none;
+  }
+  
+}
+
+@media (min-width: 950px) {
+  #logo-mobile, .menu-icons, main button, main p, #blur {
+    display: none;
+  }
+
+  header {
+    justify-content: space-evenly;
+    margin-top: 5rem;
+  }
+
+  header ul {
+    display: flex;
+    gap: 3.3rem;
+  }
+
+  header ul li {
+    list-style: none;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+  }
+
+  header ul li a:hover {
+    text-decoration: overline;
+  }
+
+  header button {
+    border: 1px solid #8257E5;
+    border-radius: 6px;
+    background: none;
+
+    color:white;
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+
+    padding: 1.1rem 3.8rem;
+    cursor: pointer;
+
+    transition: all .3s;
+  }
+
+  header button:hover {
+    background: #8257E5;
+  }
+
+  section {
+    font-size: 80px;
+    line-height: 109px;
+
+    margin-top: 4rem;
+  }
+
+  footer {
+    position: fixed;
+    bottom: -40px;
+    height: 60rem;
+    z-index: 0;
+  }
+
+  #coffee {
+    object-fit: contain;
+    height: 100%;
+  }
+
+
+}
