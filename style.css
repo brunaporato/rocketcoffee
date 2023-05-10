@@ -43,6 +43,8 @@ header {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.5rem;
+
+  animation: menuBurger .3s ease;
 }
 
 .menu-burger ul {
@@ -246,4 +248,14 @@ footer  #blur{
   }
 
 
+}
+
+@keyframes menuBurger {
+  0% {
+    transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
